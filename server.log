@@ -1,6 +1,0 @@
-
-> mesh-vault@1.0.0 start
-> node index.js
-
-[dotenv@17.2.3] injecting env (3) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
-Server listening on port 3000
