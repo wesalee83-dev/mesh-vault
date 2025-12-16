@@ -1,0 +1,12 @@
+stages:
+  - test
+
+healthcheck:
+  stage: test
+  image: node:20
+  script:
+    - cd node
+    - npm install
+    - node index.js &
+    - sleep 5
+    - curl -f http://localhost:3000/health || exit 1
