@@ -1,0 +1,32 @@
+# Git
+.git
+.gitignore
+.github
+
+# Node
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environments
+.env
+.env.*
+.envrc
+.venv/
+venv/
+
+# Logs
+server.log
+
+# OS / Editor
+.DS_Store
+.idea
+.vscode
