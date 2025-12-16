@@ -2,16 +2,25 @@ name: Docker Build
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Build Docker image
-        run: docker build -t mesh-vault -f node/Dockerfile node
+      - name: Show Dockerfile used
+        run: |
+          echo "===== Dockerfile ====="
+          cat node/Dockerfile
+          echo "======================"
+
+      - name: Build Docker image (NO CACHE)
+        run: |
+          docker build \
+            --no-cache \
+            -f node/Dockerfile \
+            -t mesh-vault \
+            node
