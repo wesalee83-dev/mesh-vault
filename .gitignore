@@ -1,12 +1,22 @@
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Env
 .env
 .venv/
 venv/
 .envrc
+
+# Node
 node_modules/
+
+# Logs
+*.log
+
+# OS / IDE
 .DS_Store
 .idea/
-.vscode
+.vscode/
